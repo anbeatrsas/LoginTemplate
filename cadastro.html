@@ -20,7 +20,7 @@
 
     <form method="POST" action="#">
 
-        <label for="Nome">Nome*</label>
+        <label for="nome">Nome*</label>
 
     <input 
     
@@ -30,6 +30,8 @@
         id="nome"
         required
         autocomplete="off"
+        maxlength="255"
+        pattern="^[A-Za-z\ ]+$"
     
     >
 
@@ -80,7 +82,7 @@
     <input 
     
         type="email"
-        name="Email"
+        name="email"
         placeholder="Email"
         id="email"
         required
